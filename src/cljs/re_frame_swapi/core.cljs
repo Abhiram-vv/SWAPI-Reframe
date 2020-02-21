@@ -6,6 +6,7 @@
    [re-frame-swapi.views :as views]
    [re-frame-swapi.config :as config]
    [re-frame-swapi.routes :as routes]
+   [re-frame-swapi.header.view :as header]
    ))
 
 
@@ -15,7 +16,9 @@
 
 (defn render []
   (let [cur-route- (rf/subscribe [:current-route])]
-    [views/current-page @cur-route-]))
+    [:div
+     [header/container]
+     [views/current-page @cur-route-]]))
 
 (defn mount-root []
   (rf/clear-subscription-cache!)
