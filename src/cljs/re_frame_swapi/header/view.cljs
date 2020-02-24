@@ -6,5 +6,5 @@
                  :background "#567890"
                  :font-size "20px"}}
    [:a {:href "#/"
-        :style {:margin "10px"}} "Home"]
+        :style {:margin "10px"}} "Planets"]
    [:a {:href "#/exercise"} "Exercise"]])
